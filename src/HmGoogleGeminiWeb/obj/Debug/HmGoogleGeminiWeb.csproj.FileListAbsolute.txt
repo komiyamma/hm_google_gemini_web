@@ -1,0 +1,12 @@
+C:\Users\master\source\repos\HmGoogleGeminiWeb\HmGoogleGeminiWeb\obj\Debug\HmGoogleGeminiWeb.csproj.AssemblyReference.cache
+C:\Users\master\source\repos\HmGoogleGeminiWeb\HmGoogleGeminiWeb\obj\Debug\HmGoogleGeminiWeb.csproj.CoreCompileInputs.cache
+C:\Users\master\source\repos\HmGoogleGeminiWeb\HmGoogleGeminiWeb\bin\Debug\HmGoogleGeminiWeb.dll
+C:\Users\master\source\repos\HmGoogleGeminiWeb\HmGoogleGeminiWeb\bin\Debug\HmGoogleGeminiWeb.pdb
+C:\Users\master\source\repos\HmGoogleGeminiWeb\HmGoogleGeminiWeb\obj\Debug\HmGoogleGeminiWeb.dll
+C:\Users\master\source\repos\HmGoogleGeminiWeb\HmGoogleGeminiWeb\obj\Debug\HmGoogleGeminiWeb.pdb
+G:\repogitory\hm_google_gemini_web\src\HmGoogleGeminiWeb\bin\Debug\HmGoogleGeminiWeb.dll
+G:\repogitory\hm_google_gemini_web\src\HmGoogleGeminiWeb\bin\Debug\HmGoogleGeminiWeb.pdb
+G:\repogitory\hm_google_gemini_web\src\HmGoogleGeminiWeb\obj\Debug\HmGoogleGeminiWeb.csproj.AssemblyReference.cache
+G:\repogitory\hm_google_gemini_web\src\HmGoogleGeminiWeb\obj\Debug\HmGoogleGeminiWeb.csproj.CoreCompileInputs.cache
+G:\repogitory\hm_google_gemini_web\src\HmGoogleGeminiWeb\obj\Debug\HmGoogleGeminiWeb.dll
+G:\repogitory\hm_google_gemini_web\src\HmGoogleGeminiWeb\obj\Debug\HmGoogleGeminiWeb.pdb

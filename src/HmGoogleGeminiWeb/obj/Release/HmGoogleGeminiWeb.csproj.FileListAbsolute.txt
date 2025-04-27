@@ -1,0 +1,4 @@
+C:\Users\master\source\repos\HmGoogleGeminiWeb\HmGoogleGeminiWeb\bin\Release\HmGoogleGeminiWeb.dll
+C:\Users\master\source\repos\HmGoogleGeminiWeb\HmGoogleGeminiWeb\obj\Release\HmGoogleGeminiWeb.csproj.AssemblyReference.cache
+C:\Users\master\source\repos\HmGoogleGeminiWeb\HmGoogleGeminiWeb\obj\Release\HmGoogleGeminiWeb.csproj.CoreCompileInputs.cache
+C:\Users\master\source\repos\HmGoogleGeminiWeb\HmGoogleGeminiWeb\obj\Release\HmGoogleGeminiWeb.dll
