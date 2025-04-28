@@ -1,5 +1,5 @@
 ﻿/*
- * HmGoogleGeminiWeb v 1.0.0.1
+ * HmGoogleGeminiWeb v 1.0.0.2
  *
  * Copyright (c) 2025 Akitsugu Komiyama
  * under the MIT License
@@ -106,7 +106,7 @@ function oneAIWindowCloseCheck() {
         return;
     }
     
-    // 個別ブラウザ枠がgeminiサイトならば、閉じる(万全ではないが、まぁ仕方がないだろう)
+    // 個別ブラウザ枠がGeminiサイトならば、閉じる(万全ではないが、まぁ仕方がないだろう)
     if (url.includes(baseUrl)) {
         browserpanecommand({
             target: "_each",
@@ -149,17 +149,28 @@ function waitBrowserPane() {
 }
 
 function onCompleteBrowserPane() {
-    const eachBrowserPane = 6;
-    setfocus(eachBrowserPane);
-    const com = createobject(currentMacroDirectory + "\\HmGoogleGeminiWeb.dll", "HmGoogleGeminiWeb.HmGoogleGeminiWeb");
-    com.PasteToBrowserPane();
-    timeHandleOfDoMain = hidemaru.setTimeout(onPastedBrowserPane, 2000);
+    try {
+        escapeselect();
+        const eachBrowserPane = 6;
+        setfocus(eachBrowserPane);
+        const com = createobject(currentMacroDirectory + "\\HmGoogleGeminiWeb.dll", "HmGoogleGeminiWeb.HmGoogleGeminiWeb");
+        com.PasteToBrowserPane();
+    } catch(e) {
+    } finally {
+        timeHandleOfDoMain = hidemaru.setTimeout(onPastedBrowserPane, 2000);
+    }
 }
 
-var focus = getfocus();
-function onPastedBrowserPane() {
-    setfocus(1);
+var orgFocus = getfocus();
+function setFocus() {
+    setfocus(orgFocus);
 }
+
+function onPastedBrowserPane() {
+    // setfocusは非同期で効いていない？
+    hidemaru.postExecMacroMemory("js { setFocus(); }");
+}
+
 
 function getQuestionText() {
 

@@ -6,7 +6,8 @@ using System.Windows.Forms;
 
 namespace HmGoogleGeminiWeb;
 
-
+[ComVisible(true)]
+[ClassInterface(ClassInterfaceType.AutoDual)]
 [Guid("618331CA-B739-4681-A6D1-3064279CE904")]
 public class HmGoogleGeminiWeb
 {
