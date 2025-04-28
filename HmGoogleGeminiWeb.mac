@@ -163,22 +163,22 @@ function onCompleteBrowserPane() {
         escapeselect();
         const eachBrowserPane = 6;
         setfocus(eachBrowserPane);
+        browserpanecommand({
+            target: "_each",
+            "focusinputfield" : 1
+        });
         const com = createobject(currentMacroDirectory + "\\HmGoogleGeminiWeb.dll", "HmGoogleGeminiWeb.HmGoogleGeminiWeb");
         com.PasteToBrowserPane();
     } catch(e) {
     } finally {
-        timeHandleOfDoMain = hidemaru.setTimeout(onPastedBrowserPane, 2000);
+        timeHandleOfDoMain = hidemaru.setTimeout(onBeginAIAnswer, 2000);
     }
 }
 
 var orgFocus = getfocus();
-function setFocus() {
-    setfocus(orgFocus);
-}
 
-function onPastedBrowserPane() {
-    // setfocusは非同期で効いていない？
-    hidemaru.postExecMacroMemory("js { setFocus(); }");
+function onBeginAIAnswer() {
+    setfocus(orgFocus);
 }
 
 
