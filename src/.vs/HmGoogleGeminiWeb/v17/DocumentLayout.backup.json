@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "G:\\repogitory\\hm_google_gemini_web\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4DED9A6-F823-47B3-98FF-DEEA089EED82}|HmGoogleGeminiWeb\\HmGoogleGeminiWeb.csproj|G:\\repogitory\\hm_google_gemini_web\\src\\hmgooglegeminiweb\\hmgooglegeminiweb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4DED9A6-F823-47B3-98FF-DEEA089EED82}|HmGoogleGeminiWeb\\HmGoogleGeminiWeb.csproj|g:\\repogitory\\hm_google_gemini_web\\src\\hmgooglegeminiweb\\hmgooglegeminiweb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4DED9A6-F823-47B3-98FF-DEEA089EED82}|HmGoogleGeminiWeb\\HmGoogleGeminiWeb.csproj|solutionrelative:hmgooglegeminiweb\\hmgooglegeminiweb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4DED9A6-F823-47B3-98FF-DEEA089EED82}|HmGoogleGeminiWeb\\HmGoogleGeminiWeb.csproj|g:\\repogitory\\hm_google_gemini_web\\src\\hmgooglegeminiweb\\clipboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4DED9A6-F823-47B3-98FF-DEEA089EED82}|HmGoogleGeminiWeb\\HmGoogleGeminiWeb.csproj|G:\\repogitory\\hm_google_gemini_web\\src\\hmgooglegeminiweb\\clipboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4DED9A6-F823-47B3-98FF-DEEA089EED82}|HmGoogleGeminiWeb\\HmGoogleGeminiWeb.csproj|solutionrelative:hmgooglegeminiweb\\clipboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -37,8 +37,7 @@
               "RelativeToolTip": "HmGoogleGeminiWeb\\ClipBoard.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvxUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:22:26.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T10:22:26.352Z"
             },
             {
               "$type": "Document",
@@ -48,7 +47,7 @@
               "RelativeDocumentMoniker": "HmGoogleGeminiWeb\\HmGoogleGeminiWeb.cs",
               "ToolTip": "G:\\repogitory\\hm_google_gemini_web\\src\\HmGoogleGeminiWeb\\HmGoogleGeminiWeb.cs",
               "RelativeToolTip": "HmGoogleGeminiWeb\\HmGoogleGeminiWeb.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAiwCQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwCMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-28T00:33:45.104Z",
               "EditorCaption": ""
