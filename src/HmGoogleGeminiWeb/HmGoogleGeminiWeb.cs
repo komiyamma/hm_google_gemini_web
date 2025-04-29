@@ -32,6 +32,7 @@ public partial class HmGoogleGeminiWeb
 
     public void PasteToBrowserPane(String text)
     {
+        CaptureClipboard();
         // クリップボードにテキストを保存
         Clipboard.SetText(text);
 
@@ -46,10 +47,6 @@ public partial class HmGoogleGeminiWeb
             SendReturn();
             // Enter を送信
             await Task.Delay(300);
-            /*
-            SendReturn();
-            await Task.Delay(300);
-            */
         });
     }
 
