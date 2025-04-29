@@ -149,8 +149,7 @@ function waitBrowserPane() {
     });
     
     if (status == "complete") {
-        const eachBrowserPane = 6;
-        setfocus(eachBrowserPane);
+        setFocusToBrowserPane();
         timeHandleOfDoMain = hidemaru.setTimeout(onCompleteBrowserPane, 300);
     }
     
@@ -175,8 +174,12 @@ function onCompleteBrowserPane() {
     }
 }
 
-var orgFocus = getfocus();
+function setFocusToBrowserPane() {
+    const eachBrowserPane = 6;
+    setfocus(eachBrowserPane);
+}
 
+var orgFocus = getfocus();
 function onBeginAIAnswer() {
     setfocus(orgFocus);
 }
