@@ -117,7 +117,6 @@ function oneAIWindowCloseCheck() {
 }
 
 // ブラウザウィンドウオープン
-// ブラウザウィンドウオープン
 function openRenderPaneCommand(text) {
 
     // 個別ブラウザ枠が、このGeminiだと思われるならば、
@@ -150,7 +149,9 @@ function waitBrowserPane() {
     });
     
     if (status == "complete") {
-        onCompleteBrowserPane();
+        const eachBrowserPane = 6;
+        setfocus(eachBrowserPane);
+        timeHandleOfDoMain = hidemaru.setTimeout(onCompleteBrowserPane, 300);
     }
     
     else {
@@ -160,7 +161,6 @@ function waitBrowserPane() {
 
 function onCompleteBrowserPane() {
     try {
-        escapeselect();
         const eachBrowserPane = 6;
         setfocus(eachBrowserPane);
         browserpanecommand({

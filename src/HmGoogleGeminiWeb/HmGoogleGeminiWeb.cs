@@ -41,8 +41,10 @@ public class HmGoogleGeminiWeb
             SendReturn();
             // Enter を送信
             await Task.Delay(300);
+            /*
             SendReturn();
             await Task.Delay(300);
+            */
         });
     }
 

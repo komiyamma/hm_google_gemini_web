@@ -8,9 +8,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|HmGoogleGeminiWeb||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4DED9A6-F823-47B3-98FF-DEEA089EED82}|HmGoogleGeminiWeb\\HmGoogleGeminiWeb.csproj|g:\\repogitory\\hm_google_gemini_web\\src\\hmgooglegeminiweb\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +31,7 @@
               "RelativeDocumentMoniker": "HmGoogleGeminiWeb\\HmGoogleGeminiWeb.cs",
               "ToolTip": "G:\\repogitory\\hm_google_gemini_web\\src\\HmGoogleGeminiWeb\\HmGoogleGeminiWeb.cs",
               "RelativeToolTip": "HmGoogleGeminiWeb\\HmGoogleGeminiWeb.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAowFQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwC4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-28T00:33:45.104Z",
               "EditorCaption": ""
@@ -48,8 +45,7 @@
               "ToolTip": "G:\\repogitory\\hm_google_gemini_web\\src\\HmGoogleGeminiWeb\\HmGoogleGeminiWeb.csproj",
               "RelativeToolTip": "HmGoogleGeminiWeb\\HmGoogleGeminiWeb.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-27T23:55:32.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T23:55:32.895Z"
             }
           ]
         }
