@@ -10,9 +10,9 @@ hidemaruversion "9.35.99";
 
 jsmode  @"WebView2\HmGoogleGeminiWeb";
 
-execjs currentmacrodirectory + "\\HmConvAIWeb.js";
-
 js {
+
+// ------------- 会話エンジンの設定項目 -------------
 
 const baseUrl = "https://gemini.google.com/app";
 
@@ -28,8 +28,6 @@ const isOneAtTimeAIRenderPane = 1; // AI関連のレンダリング枠は(他の
 const renderPaneTargetName = "HmGoogleGeminiWeb";
 
 const currentMacroDirectory = currentmacrodirectory();
-
-const com = createobject(`${currentMacroDirectory}\\${renderPaneTargetName}.dll`, `${renderPaneTargetName}.${renderPaneTargetName}`);
 
 const script = hidemaru.loadTextFile(currentMacroDirectory + "\\HmConvAIWeb.js");
 eval(script);
