@@ -13,6 +13,12 @@ namespace HmGoogleGeminiWeb;
 
 public partial class HmGoogleGeminiWeb
 {
+    public void SendToClipboard(string text)
+    {
+        // クリップボードにテキストを保存
+        Clipboard.SetText(text);
+    }
+
     private Dictionary<string, object> storedData = new Dictionary<string, object>();
 
     // クリップボードの内容を記憶

@@ -30,8 +30,11 @@ public partial class HmGoogleGeminiWeb
     private const byte VK_TAB = 0x09; // タブキーの仮想キーコード
 
 
-    public void PasteToBrowserPane()
-    { 
+    public void PasteToBrowserPane(String text)
+    {
+        // クリップボードにテキストを保存
+        Clipboard.SetText(text);
+
         // 以下を非同期実行にする
         Task.Run(async () =>
         {
