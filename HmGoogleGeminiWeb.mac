@@ -161,12 +161,12 @@ function waitBrowserPane(text) {
 
 function onCompleteBrowserPane(text) {
     try {
-        const eachBrowserPane = 6;
-        setfocus(eachBrowserPane);
+        setFocusToBrowserPane();
         browserpanecommand({
             target: "_each",
             "focusinputfield" : 1
         });
+        captureClipBoard();
         com.PasteToBrowserPane(text);
     } catch(e) {
     } finally {
@@ -226,7 +226,6 @@ function doMain() {
     if (!text) {
         return;
     }
-    captureClipBoard();
 
     timeHandleOfDoMain = hidemaru.setTimeout(doAsyncAction, 0, text);
 }
