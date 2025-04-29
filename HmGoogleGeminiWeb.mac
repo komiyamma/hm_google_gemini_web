@@ -25,8 +25,9 @@ const isOneAtTimeAIRenderPane = 1; // AI関連のレンダリング枠は(他の
 
 const renderPaneTargetName = "HmGoogleGeminiWeb";
 
-    
 const currentMacroDirectory = currentmacrodirectory();
+
+const com = createobject(currentMacroDirectory + "\\HmGoogleGeminiWeb.dll", "HmGoogleGeminiWeb.HmGoogleGeminiWeb");
 
 // 前回分が実行されずに溜まっていたら除去
 var timeHandleOfWindowCloseCheck;
@@ -166,7 +167,6 @@ function onCompleteBrowserPane() {
             target: "_each",
             "focusinputfield" : 1
         });
-        const com = createobject(currentMacroDirectory + "\\HmGoogleGeminiWeb.dll", "HmGoogleGeminiWeb.HmGoogleGeminiWeb");
         com.PasteToBrowserPane();
     } catch(e) {
     } finally {
@@ -182,8 +182,20 @@ function setFocusToBrowserPane() {
 var orgFocus = getfocus();
 function onBeginAIAnswer() {
     setfocus(orgFocus);
+    restoreClipBoard();
 }
 
+function saveClipBoard() {
+    try {
+        com.CaptureClipboard();
+    } catch(e) {}
+}
+
+function restoreClipBoard() {
+    try {
+        com.RestoreClipboard();
+    } catch(e) {}
+}
 
 function getQuestionText() {
 
@@ -209,7 +221,7 @@ function doMain() {
     if (!text) {
         return;
     }
-
+    saveClipBoard();
     setclipboard( text );
 
     timeHandleOfDoMain = hidemaru.setTimeout(doAsyncAction, 0, text);

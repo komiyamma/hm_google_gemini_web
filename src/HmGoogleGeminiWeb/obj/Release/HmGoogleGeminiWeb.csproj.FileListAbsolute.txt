@@ -2,3 +2,7 @@ C:\Users\master\source\repos\HmGoogleGeminiWeb\HmGoogleGeminiWeb\bin\Release\HmG
 C:\Users\master\source\repos\HmGoogleGeminiWeb\HmGoogleGeminiWeb\obj\Release\HmGoogleGeminiWeb.csproj.AssemblyReference.cache
 C:\Users\master\source\repos\HmGoogleGeminiWeb\HmGoogleGeminiWeb\obj\Release\HmGoogleGeminiWeb.csproj.CoreCompileInputs.cache
 C:\Users\master\source\repos\HmGoogleGeminiWeb\HmGoogleGeminiWeb\obj\Release\HmGoogleGeminiWeb.dll
+G:\repogitory\hm_google_gemini_web\src\HmGoogleGeminiWeb\bin\Release\HmGoogleGeminiWeb.dll
+G:\repogitory\hm_google_gemini_web\src\HmGoogleGeminiWeb\obj\Release\HmGoogleGeminiWeb.csproj.AssemblyReference.cache
+G:\repogitory\hm_google_gemini_web\src\HmGoogleGeminiWeb\obj\Release\HmGoogleGeminiWeb.csproj.CoreCompileInputs.cache
+G:\repogitory\hm_google_gemini_web\src\HmGoogleGeminiWeb\obj\Release\HmGoogleGeminiWeb.dll

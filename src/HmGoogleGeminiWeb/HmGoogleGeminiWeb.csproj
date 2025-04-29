@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F4DED9A6-F823-47B3-98FF-DEEA089EED82}</ProjectGuid>
     <OutputType>Library</OutputType>
-	<LangVersion>latest</LangVersion>
+    <LangVersion>latest</LangVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HmGoogleGeminiWeb</RootNamespace>
     <AssemblyName>HmGoogleGeminiWeb</AssemblyName>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClipBoard.cs" />
     <Compile Include="HmGoogleGeminiWeb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
