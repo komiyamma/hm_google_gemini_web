@@ -33,7 +33,7 @@ public partial class HmGoogleGeminiWeb
     private const byte VK_TAB = 0x09; // タブキーの仮想キーコード
 
 
-    public void PasteToBrowserPane(String text)
+    public void CaptureForBrowserPane(String text)
     {
         CaptureClipboard();
         // クリップボードにテキストを保存
@@ -48,6 +48,11 @@ public partial class HmGoogleGeminiWeb
     public void SendReturnVSync()
     {
         SendReturn();
+    }
+
+    public void SendTabSync()
+    {
+        SendTab();
     }
 
     private static async void SendTab()
