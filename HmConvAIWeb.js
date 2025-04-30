@@ -152,7 +152,7 @@ function waitBrowserPane(text) {
     }
 }
 
-
+debuginfo(2);
 function onCompleteBrowserPane(text) {
     try {
         setFocusToBrowserPane();
@@ -160,13 +160,39 @@ function onCompleteBrowserPane(text) {
             target: "_each",
             "focusinputfield" : 1,
         });
+        
         com.PasteToBrowserPane(text);
+        
+        function sendCtrlV() {
+            setFocusToBrowserPane();
+            com.SendCtrlVSync();
+        }
+        
+        function sendReturn() {
+            setFocusToBrowserPane();
+            com.SendReturnVSync();
+        }
+        
+        function nextProcedure() {
+            if (typeof(onCompleteBrowserPaneDecorator) == "function") {
+                onCompleteBrowserPaneDecorator(text);
+            }
+            timeHandleOfDoMain = hidemaru.setTimeout(onEndQuestionToAI, 200);
+        }
+        
+        
+        setFocusToBrowserPane();
+        timeHandleOfDoMain = hidemaru.setTimeout(
+        () => {
+            sendCtrlV();
+            timeHandleOfDoMain = hidemaru.setTimeout(
+            () => {
+                sendReturn();
+                nextProcedure();
+            }, 300);
+        }, 400);
     } catch(e) {
     } finally {
-        if (typeof(onCompleteBrowserPaneDecorator) == "function") {
-            onCompleteBrowserPaneDecorator(text);
-        }
-        timeHandleOfDoMain = hidemaru.setTimeout(onBeginAIAnswer, 2000);
     }
 }
 
@@ -176,12 +202,12 @@ function setFocusToBrowserPane() {
 }
 
 var orgFocus = getfocus();
-function onBeginAIAnswer() {
+function onEndQuestionToAI() {
     setfocus(orgFocus);
     restoreClipBoard();
     
     if (typeof(onEndMacroDecorator) == "function") {
-        onEndMacroDecorator?.();
+        onEndMacroDecorator();
     }
 }
 

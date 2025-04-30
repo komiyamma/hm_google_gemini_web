@@ -38,19 +38,17 @@ public partial class HmGoogleGeminiWeb
         CaptureClipboard();
         // クリップボードにテキストを保存
         Clipboard.SetText(text);
-
-        // 以下を非同期実行にする
-        Task.Run(async () =>
-        {
-            await Task.Delay(400);
-            SendCtrlV();
-            await Task.Delay(300);
-
-            // Enter を送信
-            SendReturn();
-        });
     }
 
+    public void SendCtrlVSync()
+    {
+        SendCtrlV();
+    }
+
+    public void SendReturnVSync()
+    {
+        SendReturn();
+    }
 
     private static async void SendTab()
     {
