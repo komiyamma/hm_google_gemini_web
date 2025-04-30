@@ -32,6 +32,11 @@ const currentMacroDirectory = currentmacrodirectory();
 const script = hidemaru.loadTextFile(currentMacroDirectory + "\\HmConvAIWeb.js");
 eval(script);
 
+// Google Gemini はウェブ上のテキストを選択していると、リフレッシュしないと状況が改善されないので２回目以降はリフレッシュが毎回必要。
+function secondParamDecorator(baseUrl, text) {
+    browserpanecommand({target:"_each", "refresh":1});
+}
+
 doMain();
 
 }

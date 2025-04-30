@@ -1,3 +1,4 @@
+
 // HmConvAIWeb.js 共通ライブラリ。 v 1.0.0.4
 var com = createobject(`${currentMacroDirectory}\\${renderPaneTargetName}.dll`, `${renderPaneTargetName}.${renderPaneTargetName}`);
 
@@ -111,19 +112,19 @@ function openRenderPaneCommand(text) {
         // 開かれていない時だけ...
         if (!url.includes(baseUrl)) {
             
-            let url = baseUrl;
-            if (typeof(makeRenderPaneUrl) == "function") {
-                url = makeRenderPaneUrl(baseUrl, text);
+            let firstParam = {};
+            if (typeof(firstParamDecorator) == "function") {
+                firstParam = firstParamDecorator(baseUrl, text);
             }
             
             let renderPaneOriginalParam = {
-                url: url,
+                url: baseUrl,
                 target: "_each",
                 initialize: "async",
                 show: 1
             };
             
-            const browserPaneMixParam = { ...renderPaneOriginalParam, ...renderPaneCustomParam };
+            const browserPaneMixParam = { ...renderPaneOriginalParam, ...renderPaneCustomParam, ...firstParam };
             browserpanecommand(browserPaneMixParam);
             
             // 最初のオープンの時は、処理を継続するな、という関数が定義してあれば、
@@ -131,7 +132,14 @@ function openRenderPaneCommand(text) {
                 return;
             }
         } else {
-            const browserPaneMixParam = { ...{ target:"_each"}, ...renderPaneCustomParam };
+            // ２回目の実行以降のパラメータという意味のメソッド名を３つ
+            let secondParam = {};
+            if (typeof(secondParamDecorator) == "function") {
+                secondParam = secondParamDecorator(baseUrl, text);
+            }
+            const browserPaneMixParam = { ...{ target:"_each"}, ...renderPaneCustomParam, ...secondParam };
+            debuginfo(2);
+            console.log(JSON.stringify(browserPaneMixParam));
             browserpanecommand(browserPaneMixParam);
         }
         
