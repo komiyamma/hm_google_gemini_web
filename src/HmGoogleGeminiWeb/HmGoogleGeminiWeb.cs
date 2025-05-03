@@ -64,7 +64,7 @@ public partial class HmGoogleGeminiWeb
         SendCtrlV();
     }
 
-    public void SendReturnVSync()
+    public void SendReturnSync()
     {
         SendReturn();
     }
