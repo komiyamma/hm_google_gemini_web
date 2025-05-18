@@ -1,0 +1,15 @@
+﻿jsmode @"WebView2\HmGoogleGeminiWeb";
+js {
+ 
+function onRequestQuestionText() {
+    const researchTarget = input("調査対象");
+    if (researchTarget) {
+        return "日本の戦国時代の" + researchTarget + "という人物について調査し、まとめてください。";
+    }
+
+    return "";
+}
+ 
+hidemaru.postExecMacroFile( hidemarudir() + "\\HmGoogleGeminiWeb\\HmGoogleGeminiWeb.mac" );
+ 
+} // js
