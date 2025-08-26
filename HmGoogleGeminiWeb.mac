@@ -34,10 +34,26 @@ const currentMacroDirectory = currentmacrodirectory();
 const script = hidemaru.loadTextFile(currentMacroDirectory + "\\HmConvAIWeb.js");
 eval(script);
 
-// InputFieldへのフォーカスに失敗したらリフレッシュ
-// (これでGeminiが自動で Input フィールドにフォーカスを移動してくれる)
-function focusInputFailDecorator() {
-    browserpanecommand({target:"_each", "refresh":1});
+const [major,minor,build] = hidemaruversion().split(".");
+
+// v9.50β4以降では、フォーカスに比較的自由に当てられる
+if (version() >= 950 && build >= 4) {
+    function onPrevKeySendDecorator() {
+        
+        try {
+            // Geminiのインプット枠へのフォーカス。手堅いが将来変更になるかも。だめなようなら、下のリフレッシュする処理にながさないとだめかも。
+            browserpanecommand({target:"_each", focusinputfield:'[contenteditable="true"]'});
+        } catch(e) {
+        }
+    }
+
+} else {
+
+    // InputFieldへのフォーカスに失敗したらリフレッシュ
+    // (これでGeminiが自動で Input フィールドにフォーカスを移動してくれる)
+    function focusInputFailDecorator() {
+        browserpanecommand({target:"_each", "refresh":1});
+    }
 }
 
 doMain();
